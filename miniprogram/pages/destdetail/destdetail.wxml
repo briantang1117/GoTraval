@@ -1,0 +1,19 @@
+<!--pages/destdetail/destdetail.wxml-->
+<view class="content">
+  <view class="head">
+    <image class="headimage" src="{{destdetail.image}}" mode="aspectFill"></image>
+    <image class="back" src="/images/icon/back.png"  bindtap="back"></image>
+    <text class="headtext1">{{destdetail.title}}</text>
+    <text class="headtext2">{{destdetail.titleen}}</text>
+    <text class="headtext3">{{destdetail.gone+"人去过这里"}}</text>
+  </view>
+  <view class="info">
+    <view class="infotext">目的地早知道</view>
+    <block wx:for="{{cityintro}}" wx:key="index">
+      <view class="intro">{{item}}</view>
+      <view style="height:32rpx;width:750rpx"></view>
+    </block>
+    <view style="height:16rpx;width:750rpx"></view>
+  </view>
+
+</view>

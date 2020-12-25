@@ -1,0 +1,51 @@
+<!--pages/home/home.wxml-->
+<view class="content">
+  <view id="head">
+    <view class="nav">
+      <view class="navborder">
+        <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap="switchNav">发现</view>
+      </view>
+      <view class="navborder">
+        <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap="switchNav">关注</view>
+      </view>
+      <view class="navborder">
+        <view class="{{currentTab==2?'select':'normal'}}" id="2" bindtap="switchNav">问答</view>
+      </view>
+      <view class="navborder">
+        <view class="{{currentTab==3?'select':'normal'}}" id="3" bindtap="switchNav">榜单</view>
+      </view>
+    </view>
+    <view class="searchBarPart">
+      <view class="searchBar">
+        <image src="/images/icon/search.png" style="width:28rpx; height:28rpx"></image>
+        <swiper class="searchBarSwip" vertical="true" autoplay="true" interval="3000" duration="500" circular="true" style="width:600rpx">
+          <block wx:for="{{searchHolder}}" wx:key="index">
+            <swiper-item catchtouchmove="catchTouchMove">
+              <text>{{"大家都在看："+item.title}}</text>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+  <swiper current="{{currentTab}}" bindchange="change" style="height: {{clientHeight - head_height+'px'}}"
+    duration="200">
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: {{clientHeight - head_height+'px'}}">
+        <include src='1faxian.wxml'></include>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <include src='2guanzhu.wxml'></include>
+    </swiper-item>
+    <swiper-item>
+      <include src='3wenda.wxml'></include>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: {{clientHeight - head_height+'px'}}">
+        <include src='4bangdan.wxml'></include>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/dest/dest",
+    "pages/destdetail/destdetail",
+
+
+
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3099e8",
+    "navigationBarTitleText": "趣旅行",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/tabbaricon/首页-灰色.png",
+      "selectedIconPath": "/images/tabbaricon/首页-蓝色.png"
+    },{
+      "pagePath": "pages/dest/dest",
+      "text": "目的地",
+      "iconPath": "/images/tabbaricon/行程-灰色.png",
+      "selectedIconPath": "/images/tabbaricon/行程-蓝色.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/images/tabbaricon/我-灰色.png",
+      "selectedIconPath": "/images/tabbaricon/我-蓝色.png"
+    }],
+    "color": "#4a4a4a",
+    "selectedColor": "#3099e8",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

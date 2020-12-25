@@ -1,0 +1,24 @@
+<view class="content">
+  <view class="title21">国内目的地 TOP 10</view>
+  <scroll-view scroll-x="true" class="top10scr">
+    <view class="listlist">
+      <block wx:for="{{guoneitop10}}" wx:key="index">
+        <view class="listblock" bindtap="showdistdetail" data-db="guoneitop10" data-ct="{{item.title}}">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="title22">海外目的地 TOP 10</view>
+  <scroll-view scroll-x="true" class="top10scr">
+    <view class="listlist">
+      <block wx:for="{{haiwaitop10}}" wx:key="index">
+        <view class="listblock" bindtap="showdistdetail" data-db="haiwaitop10" data-ct="{{item.title}}">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

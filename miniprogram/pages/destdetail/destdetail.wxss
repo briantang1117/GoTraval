@@ -1,0 +1,78 @@
+/* pages/destdetail/destdetail.wxss */
+page {
+  background-color: white;
+}
+.head {
+  width: 750rpx;
+  height: 500rpx;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  left: 32rpx;
+  top: 113rpx;
+  width: 18rpx;
+  height: 33rpx;
+  z-index: 1;
+}
+
+.headimage{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+  height: 500rpx;
+}
+.headtext1{
+  color: white;
+  font-size: 65rpx;
+  font-weight: bolder;
+  position: absolute;
+  left: 29rpx;
+  bottom: 80rpx;
+  z-index: 1;
+}
+.headtext2{
+  color: white;
+  font-size: 30rpx;
+  position: absolute;
+  left: 29rpx;
+  bottom: 49rpx;
+  z-index: 1;
+}
+.headtext3{
+  color: white;
+  font-size: 30rpx;
+  position: absolute;
+  right: 29rpx;
+  bottom: 49rpx;
+  z-index: 1;
+}
+
+.info {
+  position: relative;
+  top: -30rpx;
+  border-radius: 28rpx;
+  background-color: white;
+  padding-top: 58rpx;
+}
+
+.infotext {
+  margin-left: 29rpx;
+  margin-bottom: 45rpx;
+  width: 270rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+  border-bottom: 7rpx solid #3099e8;
+  text-align: center;
+}
+
+.intro {
+  margin-left: 48rpx;
+  margin-right: 48rpx;
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 36rpx;
+  line-height: 54rpx;
+}

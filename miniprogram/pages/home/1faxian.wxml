@@ -1,0 +1,49 @@
+<view class="content">
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
+    <block wx:for="{{bannerImage}}" wx:key="index">
+      <swiper-item>
+        <view class="banner_item">
+          <image src="{{item.fileId}}" mode="aspectFill"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="title1">今日热门</view>
+  <swiper next-margin="300rpx" style="height:398rpx" duration="250" current="{{hotcurrent}}">
+    <swiper-item>
+      <block wx:for="{{todayhot1}}" wx:key="index">
+        <view class="hotbox">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+          <view class="hotText">
+            <view class="hotTitle">{{item.title}}</view>
+            <view class="hotDesc">{{item.desc+"人讨论"}}</view>
+          </view>
+        </view>
+      </block>
+    </swiper-item>
+    <swiper-item>
+      <block wx:for="{{todayhot2}}" wx:key="index">
+        <view class="hotbox">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+          <view class="hotText">
+            <view class="hotTitle">{{item.title}}</view>
+            <view class="hotDesc">{{item.desc+"人讨论"}}</view>
+          </view>
+        </view>
+      </block>
+    </swiper-item>
+    <swiper-item>
+      <block wx:for="{{todayhot3}}" wx:key="index">
+        <view class="hotbox">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+          <view class="hotText">
+            <view class="hotTitle">{{item.title}}</view>
+            <view class="hotDesc">{{item.desc+"人讨论"}}</view>
+          </view>
+        </view>
+      </block>
+    </swiper-item>
+  </swiper>
+  <view class="title1">旅行发现</view>
+</view>

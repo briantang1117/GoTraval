@@ -1,0 +1,219 @@
+/* pages/home/home.wxss */
+.content{
+  background-color: #f2f2f2;
+}
+
+#head{
+  padding-left: 29rpx;
+  padding-right: 29rpx;
+  padding-top: 19rpx;
+  padding-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18rpx;
+}
+
+.navborder{
+  width: 173rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.select{
+  text-align: center;
+  border-bottom: 7rpx solid #3099e8;
+  font-weight: bold;
+  font-size: 37rpx;
+  line-height: 55rpx;
+  width: 160rpx;
+  padding-bottom: 12rpx;
+}
+
+.normal{
+  text-align: center;
+  line-height: 55rpx;
+  width: 160rpx;
+  color: #4a4a4a;
+  padding-bottom: 12rpx;
+  font-size: 32rpx;
+}
+.searchBarPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar {
+  width: 100%;
+  height: 62rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  border-radius: 28rpx;
+  align-items: center;
+  padding-left: 18rpx;
+}
+
+.searchBarSwip {
+  margin-left: 10rpx;
+  width: 550rpx;
+  height: 62rpx;
+}
+.searchBarSwip swiper-item{
+  display: flex;
+  align-items: center;
+  width: 600rpx;
+}
+
+.searchBarSwip text {
+  color: #838383;
+  font-weight: 400;
+  /* 显示一行 */
+  width: 600rpx;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 发现 */
+.banner{
+  padding-top: 20rpx;
+  width: 750rpx;
+  height: 346rpx;
+  margin-bottom: 58rpx;
+}
+
+.banner_item {
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  width: 692rpx;
+  height: 346rpx;
+  position: relative;
+}
+
+.banner_item image{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 692rpx;
+  height: 346rpx;
+  border-radius: 28rpx;
+}
+
+.banner_item text{
+  position: absolute;
+  left: 40rpx;
+  bottom: 30rpx;
+  color: white;
+  font-size: 37rpx;
+  width: 612rpx;
+  /* 显示一行 */
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title1 {
+  margin-left: 29rpx;
+  margin-bottom: 20rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.hotbox {
+  height: 100rpx;
+  margin-left: 29rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  width: 390rpx;
+}
+
+.hotbox image{
+width: 100rpx;
+height: 100rpx;
+border-radius: 28rpx;
+}
+
+.hotText{
+  margin-left: 20rpx;
+}
+
+.hotTitle {
+  font-size: 31rpx;
+  font-weight: 450;
+  margin-bottom: 8rpx;
+  /* 显示一行 */
+  width: 230rpx;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hotDesc {
+  font-size: 25rpx;
+  color: #4a4a4a;
+}
+
+/* 榜单 */
+
+.title21 {
+  padding-top: 58rpx;
+  margin-left: 29rpx;
+  margin-bottom: 25rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.title22 {
+  padding-top: 33rpx;
+  margin-left: 29rpx;
+  margin-bottom: 25rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.top10scr{
+  width: 750rpx;
+}
+
+.listlist{
+  width: 1375rpx;
+  padding-left: 29rpx;
+  display: flex;
+  flex-flow: row wrap;
+  height: 648rpx;
+}
+.listblock {
+  background-color: #fff;
+  height: 300rpx;
+  width: 250rpx;
+  border-radius: 28rpx;
+  overflow: hidden;
+  margin-bottom: 25rpx;
+  margin-right: 25rpx;
+  display: flex;
+  flex-direction:column;
+}
+
+.listblock image{
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.listblock text{
+text-align: center;
+line-height: 60rpx;
+font-size: 32rpx;
+font-weight: 450;
+}
