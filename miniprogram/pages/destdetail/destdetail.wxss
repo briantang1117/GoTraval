@@ -30,14 +30,14 @@ page {
   font-weight: bolder;
   position: absolute;
   left: 29rpx;
-  bottom: 80rpx;
+  bottom: 86rpx;
   z-index: 1;
 }
 .headtext2{
   color: white;
   font-size: 30rpx;
   position: absolute;
-  left: 29rpx;
+  left: 32rpx;
   bottom: 49rpx;
   z-index: 1;
 }

@@ -176,7 +176,7 @@ border-radius: 28rpx;
 }
 
 .title22 {
-  padding-top: 33rpx;
+  padding-top: 32rpx;
   margin-left: 29rpx;
   margin-bottom: 25rpx;
   font-size: 45rpx;
@@ -188,8 +188,8 @@ border-radius: 28rpx;
 }
 
 .listlist{
-  height: 648rpx;
-  width: 1375rpx;
+  height: 650rpx;
+  width: 1408rpx;
   padding-left: 29rpx;
   display: flex;
   flex-flow: column wrap;
