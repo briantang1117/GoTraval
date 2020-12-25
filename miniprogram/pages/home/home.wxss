@@ -188,11 +188,11 @@ border-radius: 28rpx;
 }
 
 .listlist{
+  height: 648rpx;
   width: 1375rpx;
   padding-left: 29rpx;
   display: flex;
-  flex-flow: row wrap;
-  height: 648rpx;
+  flex-flow: column wrap;
 }
 .listblock {
   background-color: #fff;

@@ -83,7 +83,7 @@ Page({
       fail: console.error
     })
     /* 从数据库中获取国内top10数据 */
-    db.collection('guoneitop10').limit(10).get({
+    db.collection('guoneitop10').limit(10).orderBy('gone', 'desc').get({
       success: res => {
         this.setData({
           guoneitop10: res.data
