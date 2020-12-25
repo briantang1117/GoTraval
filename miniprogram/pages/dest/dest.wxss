@@ -1,1 +1,56 @@
 /* pages/dest/dest.wxss */
+
+.continentName {
+  padding-top: 58rpx;
+  margin-left: 29rpx;
+  margin-bottom: 25rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.nation {
+  padding-left: 29rpx;
+  padding-right: 29rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nationBox {
+  background-color: #fff;
+  height: 256rpx;
+  width: 214rpx;
+  border-radius: 28rpx;
+  overflow: hidden;
+  margin-bottom: 25rpx;
+  display: flex;
+  flex-direction:column;
+}
+
+.nationBox image{
+  width: 214rpx;
+  height: 200rpx;
+}
+
+.nationBox text{
+text-align: center;
+line-height: 56rpx;
+font-size: 28rpx;
+font-weight: 450;
+}
+
+.nationMore {
+  background-color: #fff;
+  height: 256rpx;
+  width: 214rpx;
+  border-radius: 28rpx;
+  margin-bottom: 25rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nationMore text {
+  color: #838383;
+  font-size: 28rpx;
+}

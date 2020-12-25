@@ -45,13 +45,13 @@ Page({
   catchTouchMove: function (res) {
     return false
   },
-/* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
-  showdistdetail: function(e) {
+  /* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
+  showdistdetail: function (e) {
     console.log(e)
     var database = e.currentTarget.dataset.db
     var city = e.currentTarget.dataset.ct
     wx.navigateTo({
-      url: '../destdetail/destdetail?'+'database='+database+'&city='+city,
+      url: '../destdetail/destdetail?' + 'database=' + database + '&city=' + city,
     })
   },
 
@@ -83,14 +83,16 @@ Page({
       fail: console.error
     })
     /* 从数据库中获取国内top10数据 */
-    db.collection('guoneitop10').limit(10).orderBy('gone', 'desc').get({
-      success: res => {
-        this.setData({
-          guoneitop10: res.data
-        })
-      },
-      fail: console.error
-    })
+    db.collection('guoneitop10').orderBy('gone', 'desc')
+      .limit(10)
+      .get({
+        success: res => {
+          this.setData({
+            guoneitop10: res.data
+          })
+        },
+        fail: console.error
+      })
     /* 从数据库中获取海外top10数据 */
     db.collection('haiwaitop10').limit(10).get({
       success: res => {
