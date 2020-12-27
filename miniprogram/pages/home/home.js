@@ -13,8 +13,18 @@ Page({
     hotcurrent: 0,
     clientHeight: 0,
     head_height: 0,
+    triggered: true
   },
   /* 页面绑定nav */
+
+  refresh(){
+    this.onLoad()
+    this.setData({
+      hotcurrent: 0,
+      triggered:false
+    })
+  },
+
   switchNav: function (e) {
     var index = e.target.id
     this.setData({
@@ -154,11 +164,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    this.onLoad()
-    this.setData({
-      hotcurrent: 0
-    })
-    wx.stopPullDownRefresh()
+
   },
 
   /**

@@ -1,32 +1,18 @@
-// pages/dest/dest.js
+// pages/nationdetail/nationdetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    Asia: [],
-    Eur: [],
-  },
 
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const db = wx.cloud.database()
-    db.collection("destination").where({continent: "Asia"}).limit(5).get({
-      success: res => {
-        this.setData({Asia: res.data})
-      },
-      fail: console.error
-    })
-    db.collection("destination").where({continent: "Eur"}).limit(5).get({
-      success: res => {
-        this.setData({Eur: res.data})
-      },
-      fail: console.error
-    })
+
   },
 
   /**

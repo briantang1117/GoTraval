@@ -7,7 +7,7 @@
   padding-left: 29rpx;
   padding-right: 29rpx;
   padding-top: 19rpx;
-  padding-bottom: 20rpx;
+  padding-bottom: 25rpx;
   background-color: #fff;
 }
 
@@ -81,10 +81,10 @@
 
 /* 发现 */
 .banner{
-  padding-top: 20rpx;
+  padding-top: 25rpx;
   width: 750rpx;
   height: 346rpx;
-  margin-bottom: 58rpx;
+  padding-bottom: 25rpx;
 }
 
 .banner_item {
@@ -120,7 +120,8 @@
 
 .title1 {
   margin-left: 29rpx;
-  margin-bottom: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
   font-size: 45rpx;
   font-weight: bolder;
 }
@@ -131,8 +132,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
   margin-bottom: 20rpx;
   overflow: hidden;
   width: 390rpx;
@@ -167,16 +166,8 @@ border-radius: 28rpx;
 
 /* 榜单 */
 
-.title21 {
-  padding-top: 58rpx;
-  margin-left: 29rpx;
-  margin-bottom: 25rpx;
-  font-size: 45rpx;
-  font-weight: bolder;
-}
-
-.title22 {
-  padding-top: 32rpx;
+.title2 {
+  padding-top: 20rpx;
   margin-left: 29rpx;
   margin-bottom: 25rpx;
   font-size: 45rpx;
@@ -188,7 +179,7 @@ border-radius: 28rpx;
 }
 
 .listlist{
-  height: 650rpx;
+  height: 710rpx;
   width: 1408rpx;
   padding-left: 29rpx;
   display: flex;
@@ -196,7 +187,7 @@ border-radius: 28rpx;
 }
 .listblock {
   background-color: #fff;
-  height: 300rpx;
+  height: 330rpx;
   width: 250rpx;
   border-radius: 28rpx;
   overflow: hidden;
@@ -208,7 +199,7 @@ border-radius: 28rpx;
 
 .listblock image{
   width: 250rpx;
-  height: 250rpx;
+  height: 270rpx;
 }
 
 .listblock text{

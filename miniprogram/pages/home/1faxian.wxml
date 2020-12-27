@@ -10,7 +10,7 @@
     </block>
   </swiper>
   <view class="title1">今日热门</view>
-  <swiper next-margin="300rpx" style="height:398rpx" duration="250" current="{{hotcurrent}}">
+  <swiper next-margin="300rpx" style="height:360rpx" duration="250" current="{{hotcurrent}}">
     <swiper-item>
       <block wx:for="{{todayhot1}}" wx:key="index">
         <view class="hotbox">
@@ -45,5 +45,11 @@
       </block>
     </swiper-item>
   </swiper>
+  <view class="title1">旅行发现</view>
+  <view class="title1">旅行发现</view>
+  <view class="title1">旅行发现</view>
+  <view class="title1">旅行发现</view>
+  <view class="title1">旅行发现</view>
+  <view class="title1">旅行发现</view>
   <view class="title1">旅行发现</view>
 </view>

@@ -1,5 +1,6 @@
 <view class="content">
-  <view class="title21">国内目的地 TOP 10</view>
+  <view style="height:25rpx; width:750rpx"></view>
+  <view class="title2">国内目的地 TOP 10</view>
   <scroll-view scroll-x="true" class="top10scr">
     <view class="listlist">
       <block wx:for="{{guoneitop10}}" wx:key="index">
@@ -10,7 +11,7 @@
       </block>
     </view>
   </scroll-view>
-  <view class="title22">海外目的地 TOP 10</view>
+  <view class="title2">海外目的地 TOP 10</view>
   <scroll-view scroll-x="true" class="top10scr">
     <view class="listlist">
       <block wx:for="{{haiwaitop10}}" wx:key="index">

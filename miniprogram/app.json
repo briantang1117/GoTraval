@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/dest/dest",
     "pages/home/home",
+    "pages/dest/dest",
     "pages/me/me",
     "pages/destdetail/destdetail",
+    "pages/nationdetail/nationdetail",
 
 
 

@@ -10,10 +10,10 @@ page {
 
 .back {
   position: absolute;
-  left: 32rpx;
-  top: 113rpx;
-  width: 18rpx;
-  height: 33rpx;
+  left: 14rpx;
+  top: 97rpx;
+  width: 54rpx;
+  height: 66rpx;
   z-index: 1;
 }
 

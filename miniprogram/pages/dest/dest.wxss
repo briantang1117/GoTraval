@@ -1,10 +1,18 @@
 /* pages/dest/dest.wxss */
+.title {
+  padding-top: 45rpx;
+  padding-bottom: 25rpx;
+  margin-left: 29rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
 
 .continentName {
-  padding-top: 58rpx;
+  padding-top: 20rpx;
   margin-left: 29rpx;
   margin-bottom: 25rpx;
-  font-size: 45rpx;
+  font-size: 38rpx;
   font-weight: bolder;
 }
 
