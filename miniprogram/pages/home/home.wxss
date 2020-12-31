@@ -8,7 +8,7 @@
   padding-right: 29rpx;
   padding-top: 19rpx;
   padding-bottom: 25rpx;
-  background-color: #fff;
+  background-color: #3099e8;
 }
 
 .nav{
@@ -25,19 +25,20 @@
 
 .select{
   text-align: center;
-  border-bottom: 7rpx solid #3099e8;
+  border-bottom: 7rpx solid #81d0f9;
   font-weight: bold;
   font-size: 37rpx;
   line-height: 55rpx;
   width: 160rpx;
   padding-bottom: 12rpx;
+  color: white;
 }
 
 .normal{
   text-align: center;
   line-height: 55rpx;
   width: 160rpx;
-  color: #4a4a4a;
+  color: white;
   padding-bottom: 12rpx;
   font-size: 32rpx;
 }
