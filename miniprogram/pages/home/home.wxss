@@ -1,7 +1,7 @@
 /* pages/home/home.wxss */
-.content{
+/*.content{
   background-color: #f2f2f2;
-}
+}*/
 
 #head{
   padding-left: 29rpx;
@@ -149,7 +149,7 @@ border-radius: 28rpx;
 }
 
 .hotTitle {
-  font-size: 31rpx;
+  font-size: 28rpx;
   font-weight: 450;
   margin-bottom: 8rpx;
   /* 显示一行 */
@@ -161,7 +161,7 @@ border-radius: 28rpx;
 }
 
 .hotDesc {
-  font-size: 25rpx;
+  font-size: 24rpx;
   color: #4a4a4a;
 }
 
@@ -208,4 +208,80 @@ text-align: center;
 line-height: 60rpx;
 font-size: 32rpx;
 font-weight: 450;
+}
+
+.discoverycontent{
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+
+.discoverybox{
+  width: 333rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.discoveryimage{
+  width: 333rpx;
+  height: 333rpx;
+  border-radius: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.discoverytitle{
+  width: 333rpx;
+  font-size: 28rpx;
+  font-weight: 450;
+  margin-bottom: 14rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.discoveryinfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.discoveryuser {
+  display: flex;
+  align-items: center;
+}
+.discoveryuser image{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  margin-right: 16rpx;
+}
+
+.discoveryuser text{
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+.discoverynum text{
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+.end{
+  font-size: 24rpx;
+  color: #838383;
+  text-align: center;
+}
+.guanzhu{
+  height: 1200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.guanzhu text{
+  font-size: 24rpx;
+  color: #838383;
+  text-align: center;
 }

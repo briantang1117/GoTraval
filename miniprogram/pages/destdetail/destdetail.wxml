@@ -13,7 +13,6 @@
       <view class="intro">{{item}}</view>
       <view style="height:32rpx;width:750rpx"></view>
     </block>
-    <view style="height:16rpx;width:750rpx"></view>
   </view>
-
+  <view style="height:16rpx;width:750rpx"></view>
 </view>

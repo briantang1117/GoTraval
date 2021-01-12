@@ -9,6 +9,7 @@ Page({
     todayhot3: [],
     guoneitop10: [],
     haiwaitop10: [],
+    discovery:[],
     currentTab: 0,
     hotcurrent: 0,
     clientHeight: 0,
@@ -65,6 +66,15 @@ Page({
     })
   },
 
+    /* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
+    showdiscoverydetail: function (e) {
+      console.log(e)
+      var art = e.currentTarget.dataset.art
+      wx.navigateTo({
+        url: '../discoverydetail/discoverydetail?' + 'art=' + art,
+      })
+    },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -80,9 +90,11 @@ Page({
       fail: console.error
     })
     /* 从数据库中获取今日热门数据 */
-    db.collection('todayhot').limit(9).get({
+    db.collection('todayhot').orderBy('desc', 'desc')
+    .limit(9)
+    .get({
       success: res => {
-        var datalist = this.shuffle(res.data)
+        var datalist = res.data
         this.setData({
           searchHolder: datalist,
           todayhot1: [datalist[0], datalist[1], datalist[2]],
@@ -92,6 +104,16 @@ Page({
       },
       fail: console.error
     })
+/* 从数据库中获取今日热门数据 */
+db.collection('discovery').get({
+  success: res => {
+    var datalist = this.shuffle(res.data)
+    this.setData({
+      discovery: datalist
+    })
+  },
+  fail: console.error
+})
     /* 从数据库中获取国内top10数据 */
     db.collection('guoneitop10').orderBy('gone', 'desc')
       .limit(10)

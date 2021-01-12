@@ -69,10 +69,10 @@ page {
 }
 
 .intro {
-  margin-left: 48rpx;
-  margin-right: 48rpx;
+  margin-left: 29rpx;
+  margin-right: 29rpx;
   text-indent: 2em;
   text-align: justify;
   font-size: 36rpx;
-  line-height: 54rpx;
+  line-height: 1.5em;
 }

@@ -1,1 +1,4 @@
-<text>pages/home/guanzhu.wxml</text>
+<view class="guanzhu">
+  <text>用户OpenId相关功能暂未开发</text>
+  <text>下学期再做</text>
+</view>

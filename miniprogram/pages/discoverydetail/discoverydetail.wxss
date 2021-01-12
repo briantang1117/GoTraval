@@ -1,0 +1,74 @@
+/* pages/discoverydetail/discoverydetail.wxss */
+page{
+  background-color: white;
+}
+
+.topbar {
+  background-color: white;
+  position: fixed;
+  top: 0rpx;
+  height: 108rpx;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user{
+  margin-left: 29rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user image {
+  border-radius: 34rpx;
+}
+
+.user text {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.detailinfo {
+  padding-top: 108rpx;
+}
+
+.intro {
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 36rpx;
+  line-height: 1.5em;
+}
+
+.title {
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  text-align: justify;
+  font-size: 38rpx;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.plus {
+  height: 48rpx;
+  width: 120rpx;
+  margin-right: 29rpx;
+  border-radius: 24rpx;
+  border: 2rpx solid #3099e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus text {
+  color: #3099e8;
+  font-size: 28rpx;
+}
+.plus image {
+  margin-right: 4rpx;
+}

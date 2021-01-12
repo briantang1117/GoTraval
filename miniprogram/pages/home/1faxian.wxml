@@ -46,10 +46,24 @@
     </swiper-item>
   </swiper>
   <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
-  <view class="title1">旅行发现</view>
+  <view class="discoverycontent">
+    <block wx:for="{{discovery}}" wx:key="index">
+      <view class="discoverybox" bindtap="showdiscoverydetail" data-art="{{item._id}}">
+        <image class="discoveryimage" src="{{item.image}}" mode="aspectFill"></image>
+        <text class="discoverytitle">{{item.title}}</text>
+        <view class="discoveryinfo">
+          <view class="discoveryuser">
+            <image src="{{item.userimage}}"></image>
+            <text>{{item.user}}</text>
+          </view>
+          <view class="discoverynum">
+            <text>{{item.viewnum}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view style="height:29rpx;width:750rpx"></view>
+  <view class="end">没有更多了</view>
+  <view style="height:29rpx;width:750rpx"></view>
 </view>

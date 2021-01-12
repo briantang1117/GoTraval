@@ -5,8 +5,8 @@
     "pages/me/me",
     "pages/destdetail/destdetail",
     "pages/nationdetail/nationdetail",
-
-
+    "pages/discoverydetail/discoverydetail",
+    
 
     "pages/index/index",
     "pages/userConsole/userConsole",
