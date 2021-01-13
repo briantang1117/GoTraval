@@ -1,2 +1,52 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="content">
+  <view class="userinfobox">
+    <image src="/images/icon/mebg.png" class="mebg" mode="aspectFill"></image>
+    <button wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="login"> 点击登录 </button>
+    <block wx:else>
+      <view style="width: 750rpx; height: 146rpx"></view>
+      <view class="baseinfo">
+        <view class="userhead">
+          <image src="{{avatarUrl}}"></image>
+        </view>
+        <text class="nickname">{{nickname}}</text>
+        <text class="slogan">{{slogan}}</text>
+      </view>
+      <view class="infodata">
+        <view class="databox">
+          <text class="number">{{data[0]}}</text>
+          <text class="tag">城市</text>
+        </view>
+        <view class="databox">
+          <text class="number">{{data[1]}}</text>
+          <text class="tag">关注</text>
+        </view>
+        <view class="databox">
+          <text class="number">{{data[2]}}</text>
+          <text class="tag">粉丝</text>
+        </view>
+        <view class="databox">
+          <text class="number">{{data[3]}}</text>
+          <text class="tag">互动</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="nav">
+    <view class="navborder">
+      <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap="switchNav">游记</view>
+    </view>
+    <view class="navborder">
+      <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap="switchNav">收藏</view>
+    </view>
+  </view>
+  <swiper current="{{currentTab}}" bindchange="change" style="height:600rpx"
+    duration="200">
+    <swiper-item>
+        <include src='mefaxian.wxml'></include>
+    </swiper-item>
+    <swiper-item>
+      <include src='meshouchang.wxml'></include>
+    </swiper-item>
+  </swiper>
+</view>

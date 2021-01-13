@@ -38,6 +38,7 @@ Page({
 
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
+      console.log(e.detail.userInfo)
       this.setData({
         logged: true,
         avatarUrl: e.detail.userInfo.avatarUrl,

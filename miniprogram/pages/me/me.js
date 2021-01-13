@@ -1,20 +1,71 @@
 // pages/me/me.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userInfo: {},
+    avatarUrl: './user-unlogin.png',
+    nickname: '',
+    slogan: '',
+    data: [10,78,5,216],
+    logged: false,
+    takeSession: false,
+    requestResult: '',
+    currentTab: 0
   },
-
+  switchNav: function (e) {
+    var index = e.target.id
+    this.setData({
+      currentTab: index
+    })
+  },
+  /* nav绑定页面 */
+  change: function (e) {
+    var cur = e.detail.current;
+    this.setData({
+      currentTab: cur
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (e) {
+    wx.getSetting({
+      success: res => {
+        console.log("login")
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.getUserInfo({
+            success: res => {
+              this.setData({
+                logged: true,
+                avatarUrl: res.userInfo.avatarUrl,
+                nickname: res.userInfo.nickName,
+                userInfo: res.userInfo,
+                slogan: '业余摄影师 旅行爱好者'
+              })
+            }
+          })
+        }
+      }
+    })
   },
-
+  onGetUserInfo: function(e) {
+    if (!this.data.logged && e.detail.userInfo) {
+      console.log(e.detail.userInfo)
+      this.setData({
+        logged: true,
+        avatarUrl: e.detail.userInfo.avatarUrl,
+        nickname: e.detail.userInfo.nickName,
+        userInfo: e.detail.userInfo,
+        slogan: '业余摄影师 旅行爱好者'
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

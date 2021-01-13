@@ -1,1 +1,130 @@
 /* pages/me/me.wxss */
+.userinfobox {
+  width: 750rpx;
+  height: 620rpx;
+}
+
+.mebg {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 750rpx;
+  height: 620rpx;
+  z-index: -1;
+}
+
+.baseinfo{
+  width: 750rpx;
+  height: 350rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.userhead {
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.userhead image{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 110rpx;
+}
+
+.nickname{
+  width: 750rpx;
+  text-align: center;
+  color: white;
+  font-size: 46rpx;
+}
+
+.slogan{
+  width: 750rpx;
+  text-align: center;
+  color: white;
+  font-size: 26rpx;
+}
+
+.infodata{
+  height: 124rpx;
+  padding-left: 29rpx;
+  padding-right: 29rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.databox{
+  width: 148rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.databox text {
+  text-align: center;
+}
+
+.tag{
+  font-size: 26rpx;
+  color: white;
+}
+
+.number{
+  font-size: 40rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.login{
+  margin-top: 300rpx;
+  color: white;
+  border: 2rpx solid white;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 18rpx;
+  margin-bottom: 18rpx;
+}
+
+.navborder{
+  width: 173rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.select{
+  text-align: center;
+  border-bottom: 7rpx solid #81d0f9;
+  font-weight: bold;
+  font-size: 37rpx;
+  line-height: 55rpx;
+  width: 160rpx;
+  padding-bottom: 12rpx;
+  color: black;
+}
+
+.normal{
+  text-align: center;
+  line-height: 55rpx;
+  width: 160rpx;
+  color: black;
+  padding-bottom: 12rpx;
+  font-size: 32rpx;
+}
+
+.guanzhu{
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.guanzhu text{
+  font-size: 24rpx;
+  color: #838383;
+  text-align: center;
+}
