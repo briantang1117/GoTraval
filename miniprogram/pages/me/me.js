@@ -48,6 +48,7 @@ Page({
                 userInfo: res.userInfo,
                 slogan: '业余摄影师 旅行爱好者'
               })
+              wx.setStorageSync('userimage', res.userInfo.avatarUrl)
             }
           })
         }
@@ -56,7 +57,6 @@ Page({
   },
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
-      console.log(e.detail.userInfo)
       this.setData({
         logged: true,
         avatarUrl: e.detail.userInfo.avatarUrl,
@@ -64,6 +64,7 @@ Page({
         userInfo: e.detail.userInfo,
         slogan: '业余摄影师 旅行爱好者'
       })
+      wx.setStorageSync('userimage', e.detail.userInfo.avatarUrl)
     }
   },
   /**

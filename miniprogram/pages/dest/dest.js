@@ -7,6 +7,11 @@ Page({
   data: {
     Asia: [],
     Eur: [],
+    NA: [],
+    SA: [],
+    AF: [],
+    DY: [],
+    NJ: [],
   },
 
 
@@ -14,6 +19,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.stopPullDownRefresh()
     const db = wx.cloud.database()
     db.collection("destination").where({continent: "Asia"}).limit(5).get({
       success: res => {
@@ -24,6 +30,36 @@ Page({
     db.collection("destination").where({continent: "Eur"}).limit(5).get({
       success: res => {
         this.setData({Eur: res.data})
+      },
+      fail: console.error
+    })
+    db.collection("destination").where({continent: "NA"}).limit(5).get({
+      success: res => {
+        this.setData({NA: res.data})
+      },
+      fail: console.error
+    })
+    db.collection("destination").where({continent: "SA"}).limit(5).get({
+      success: res => {
+        this.setData({SA: res.data})
+      },
+      fail: console.error
+    })
+    db.collection("destination").where({continent: "AF"}).limit(5).get({
+      success: res => {
+        this.setData({AF: res.data})
+      },
+      fail: console.error
+    })
+    db.collection("destination").where({continent: "DY"}).limit(5).get({
+      success: res => {
+        this.setData({DY: res.data})
+      },
+      fail: console.error
+    })
+    db.collection("destination").where({continent: "NJ"}).limit(5).get({
+      success: res => {
+        this.setData({NJ: res.data})
       },
       fail: console.error
     })
@@ -61,6 +97,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    var that = this;
+    this.onLoad(); //重新加载onLoad()
 
   },
 

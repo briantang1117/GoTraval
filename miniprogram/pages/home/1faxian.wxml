@@ -13,7 +13,7 @@
   <swiper next-margin="300rpx" style="height:360rpx" duration="250" current="{{hotcurrent}}">
     <swiper-item>
       <block wx:for="{{todayhot1}}" wx:key="index">
-        <view class="hotbox">
+        <view class="hotbox" bindtap="sorry">
           <image src="{{item.image}}" mode="aspectFill"></image>
           <view class="hotText">
             <view class="hotTitle">{{item.title}}</view>
@@ -24,7 +24,7 @@
     </swiper-item>
     <swiper-item>
       <block wx:for="{{todayhot2}}" wx:key="index">
-        <view class="hotbox">
+        <view class="hotbox" bindtap="sorry">
           <image src="{{item.image}}" mode="aspectFill"></image>
           <view class="hotText">
             <view class="hotTitle">{{item.title}}</view>
@@ -35,7 +35,7 @@
     </swiper-item>
     <swiper-item>
       <block wx:for="{{todayhot3}}" wx:key="index">
-        <view class="hotbox">
+        <view class="hotbox" bindtap="sorry">
           <image src="{{item.image}}" mode="aspectFill"></image>
           <view class="hotText">
             <view class="hotTitle">{{item.title}}</view>
@@ -57,7 +57,7 @@
             <text>{{item.user}}</text>
           </view>
           <view class="discoverynum">
-            <text>{{item.viewnum}}</text>
+            <text>{{item.viewnum}} 阅读</text>
           </view>
         </view>
       </view>

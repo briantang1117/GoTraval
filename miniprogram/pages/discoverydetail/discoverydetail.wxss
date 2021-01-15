@@ -1,6 +1,6 @@
 /* pages/discoverydetail/discoverydetail.wxss */
 page{
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .topbar {
@@ -71,4 +71,37 @@ page{
 }
 .plus image {
   margin-right: 4rpx;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 29rpx;
+  padding-left: 29rpx;
+}
+
+.send {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.commentuser{
+  height: 68rpx;
+  width: 68rpx;
+  border-radius: 34rpx;
+}
+
+.commentinput{
+  display: flex;
+  align-items: center;
+  border-radius: 34rpx;
+  width: 530rpx;
+  height: 68rpx;
+  background-color: white;
+}
+
+.inputbox {
+  width: 470rpx;
+  margin-left: 30rpx;
 }

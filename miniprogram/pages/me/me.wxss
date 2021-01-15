@@ -79,9 +79,8 @@
 }
 
 .login{
-  margin-top: 300rpx;
   color: white;
-  border: 2rpx solid white;
+  line-height: 620rpx;
 }
 
 .nav{

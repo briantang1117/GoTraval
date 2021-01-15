@@ -1,4 +1,7 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "目的地"
+  "navigationBarTitleText": "目的地",
+  "backgroundColor": "#f6f6f6",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark" 
 }

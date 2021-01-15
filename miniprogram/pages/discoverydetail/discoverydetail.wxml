@@ -20,5 +20,12 @@
       <view style="height:32rpx;width:750rpx"></view>
     </block>
   </view>
-  <view style="height:32rpx;width:750rpx"></view>
+  <view class="comment">
+    <image class="commentuser" src="{{userimage}}" mode="aspectFill"></image>
+    <view class="commentinput">
+      <input class="inputbox" type="text" placeholder="添加评论…"></input>
+    </view>
+    <image class="send" src="/images/icon/send.png" mode="aspectFill"  bindtap="send"></image>
+  </view>
+  <view style="height:48rpx;width:750rpx"></view>
 </view>

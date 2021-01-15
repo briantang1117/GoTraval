@@ -214,7 +214,7 @@ font-weight: 450;
   margin-left: 29rpx;
   margin-right: 29rpx;
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -264,10 +264,14 @@ font-weight: 450;
   color: #4a4a4a;
 }
 
+
+
 .discoverynum text{
   font-size: 24rpx;
   color: #4a4a4a;
 }
+
+
 
 .end{
   font-size: 24rpx;

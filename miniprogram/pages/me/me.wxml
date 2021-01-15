@@ -2,7 +2,7 @@
 <view class="content">
   <view class="userinfobox">
     <image src="/images/icon/mebg.png" class="mebg" mode="aspectFill"></image>
-    <button wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="login"> 点击登录 </button>
+    <button wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="login" style="width: 750rpx; height: 620rpx"> 点击登录 </button>
     <block wx:else>
       <view style="width: 750rpx; height: 146rpx"></view>
       <view class="baseinfo">

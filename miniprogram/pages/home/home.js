@@ -9,20 +9,27 @@ Page({
     todayhot3: [],
     guoneitop10: [],
     haiwaitop10: [],
-    discovery:[],
+    discovery: [],
     currentTab: 0,
     hotcurrent: 0,
     clientHeight: 0,
     head_height: 0,
     triggered: true
   },
-  /* 页面绑定nav */
+ 
+  sorry: function () {
+    wx.showToast({
+      title: '该功能暂未开发 下学期再做 上面的Banner和下面的旅行发现可以点击哦 快去试试吧',
+      icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+      duration: 5000     
+    })  
+  },
 
-  refresh(){
+  refresh() {
     this.onLoad()
     this.setData({
       hotcurrent: 0,
-      triggered:false
+      triggered: false
     })
   },
 
@@ -66,14 +73,14 @@ Page({
     })
   },
 
-    /* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
-    showdiscoverydetail: function (e) {
-      console.log(e)
-      var art = e.currentTarget.dataset.art
-      wx.navigateTo({
-        url: '../discoverydetail/discoverydetail?' + 'art=' + art,
-      })
-    },
+  /* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
+  showdiscoverydetail: function (e) {
+    console.log(e)
+    var art = e.currentTarget.dataset.art
+    wx.navigateTo({
+      url: '../discoverydetail/discoverydetail?' + 'art=' + art,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -91,29 +98,29 @@ Page({
     })
     /* 从数据库中获取今日热门数据 */
     db.collection('todayhot').orderBy('desc', 'desc')
-    .limit(9)
-    .get({
+      .limit(9)
+      .get({
+        success: res => {
+          var datalist = res.data
+          this.setData({
+            searchHolder: datalist,
+            todayhot1: [datalist[0], datalist[1], datalist[2]],
+            todayhot2: [datalist[3], datalist[4], datalist[5]],
+            todayhot3: [datalist[6], datalist[7], datalist[8]]
+          })
+        },
+        fail: console.error
+      })
+    /* 从数据库中获取今日热门数据 */
+    db.collection('discovery').get({
       success: res => {
-        var datalist = res.data
+        var datalist = this.shuffle(res.data)
         this.setData({
-          searchHolder: datalist,
-          todayhot1: [datalist[0], datalist[1], datalist[2]],
-          todayhot2: [datalist[3], datalist[4], datalist[5]],
-          todayhot3: [datalist[6], datalist[7], datalist[8]]
+          discovery: datalist
         })
       },
       fail: console.error
     })
-/* 从数据库中获取今日热门数据 */
-db.collection('discovery').get({
-  success: res => {
-    var datalist = this.shuffle(res.data)
-    this.setData({
-      discovery: datalist
-    })
-  },
-  fail: console.error
-})
     /* 从数据库中获取国内top10数据 */
     db.collection('guoneitop10').orderBy('gone', 'desc')
       .limit(10)
@@ -126,14 +133,16 @@ db.collection('discovery').get({
         fail: console.error
       })
     /* 从数据库中获取海外top10数据 */
-    db.collection('haiwaitop10').limit(10).get({
-      success: res => {
-        this.setData({
-          haiwaitop10: res.data
-        })
-      },
-      fail: console.error
-    })
+    db.collection('haiwaitop10').orderBy('gone', 'desc')
+      .limit(10)
+      .get({
+        success: res => {
+          this.setData({
+            haiwaitop10: res.data
+          })
+        },
+        fail: console.error
+      })
 
     /* 获取窗口高度 */
     var that = this

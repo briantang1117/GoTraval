@@ -1,6 +1,6 @@
 <!--pages/dest/dest.wxml-->
 <view class="content">
-  <view class="title">您的下一个目的地是……</view>
+  <view class="title">你好，世界！</view>
   <view class="continentName">亚洲</view>
   <view class="nation">
     <block wx:for="{{Asia}}" wx:key="index">
@@ -26,8 +26,63 @@
     </view>
   </view>
   <view class="continentName">北美洲</view>
+  <view class="nation">
+    <block wx:for="{{NA}}" wx:key="index">
+      <view class="nationBox">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <text>{{item.nation}}</text>
+      </view>
+    </block>
+    <view class="nationMore">
+      <text>查看更多</text>
+    </view>
+  </view>
   <view class="continentName">南美洲</view>
+  <view class="nation">
+    <block wx:for="{{SA}}" wx:key="index">
+      <view class="nationBox">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <text>{{item.nation}}</text>
+      </view>
+    </block>
+    <view class="nationMore">
+      <text>查看更多</text>
+    </view>
+  </view>
   <view class="continentName">非洲</view>
+  <view class="nation">
+    <block wx:for="{{AF}}" wx:key="index">
+      <view class="nationBox">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <text>{{item.nation}}</text>
+      </view>
+    </block>
+    <view class="nationMore">
+      <text>查看更多</text>
+    </view>
+  </view>
   <view class="continentName">大洋洲</view>
+  <view class="nation">
+    <block wx:for="{{DY}}" wx:key="index">
+      <view class="nationBox">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <text>{{item.nation}}</text>
+      </view>
+    </block>
+    <view class="nationMore">
+      <text>查看更多</text>
+    </view>
+  </view>
   <view class="continentName">南极洲</view>
+  <view class="nation">
+    <block wx:for="{{NJ}}" wx:key="index">
+      <view class="nationBox">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <text>{{item.nation}}</text>
+      </view>
+    </block>
+    <view class="nationMore">
+      <text>查看更多</text>
+    </view>
+  </view>
 </view>

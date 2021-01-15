@@ -6,14 +6,22 @@ Page({
    */
   data: {
     discoverydetail: {},
-    discintro: []
+    discintro: [],
+    userimage: './user-unlogin.png',
   },
 
   follow: function () {
     wx.showToast({
-      title: '用户OpenId相关功能暂未开发',
+      title: '用户OpenId相关功能暂未开发 下学期再做',
       icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
-      duration: 2000     
+      duration: 5000     
+    })  
+  },
+  send: function () {
+    wx.showToast({
+      title: '用户评论相关功能暂未开发  下学期再做',
+      icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+      duration: 5000     
     })  
   },
 
@@ -21,6 +29,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (e) {
+    var userimg = wx.getStorageSync('userimage')
+    if (userimg != '') {
+      this.setData({
+        userimage: userimg
+      })
+    }
     var art = e.art
     const db = wx.cloud.database()
     db.collection("discovery").where({
