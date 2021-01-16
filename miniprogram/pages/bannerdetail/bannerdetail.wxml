@@ -1,0 +1,30 @@
+<view class="content">
+  <view class="topbar">
+    <view class="user">
+        <image src="{{bannerdetail.userimage}}" style="height:68rpx; width:68rpx" mode="aspectFill"></image>
+      <text>{{bannerdetail.user}}</text>
+    </view>
+    <view class="plus" bindtap="follow">
+      <image src="/images/icon/plus.png" style="height: 24rpx;width: 24rpx"></image>
+      <text>关注</text>
+    </view>
+  </view>
+  <view class="detailinfo">
+    <image src="{{bannerdetail.fileId}}" style="width: 750rpx" mode="widthFix"></image>
+    <view style="height:28rpx;width:750rpx"></view>
+    <view class="title">{{bannerdetail.name}}</view>
+    <view style="height:32rpx;width:750rpx"></view>
+    <block wx:for="{{discintro}}" wx:key="index">
+      <view class="intro">{{item}}</view>
+      <view style="height:32rpx;width:750rpx"></view>
+    </block>
+  </view>
+  <view class="comment">
+    <image class="commentuser" src="{{userimage}}" mode="aspectFill"></image>
+    <view class="commentinput">
+      <input class="inputbox" type="text" placeholder="添加评论…"></input>
+    </view>
+    <image class="send" src="/images/icon/send.png" mode="aspectFill"  bindtap="send"></image>
+  </view>
+  <view style="height:48rpx;width:750rpx"></view>
+</view>

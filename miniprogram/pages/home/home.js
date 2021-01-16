@@ -73,12 +73,21 @@ Page({
     })
   },
 
+
   /* 跳转到详情页 传递两个参数：数据库表名 城市名称 */
   showdiscoverydetail: function (e) {
     console.log(e)
     var art = e.currentTarget.dataset.art
     wx.navigateTo({
       url: '../discoverydetail/discoverydetail?' + 'art=' + art,
+    })
+  },
+
+  showbannerdetail: function (e) {
+    console.log(e)
+    var art = e.currentTarget.dataset.art
+    wx.navigateTo({
+      url: '../bannerdetail/bannerdetail?' + 'art=' + art,
     })
   },
 
@@ -101,7 +110,7 @@ Page({
       .limit(9)
       .get({
         success: res => {
-          var datalist = res.data
+          var datalist = this.shuffle(res.data)
           this.setData({
             searchHolder: datalist,
             todayhot1: [datalist[0], datalist[1], datalist[2]],

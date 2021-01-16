@@ -64,7 +64,13 @@ Page({
       fail: console.error
     })
   },
-
+  sorry: function () {
+    wx.showToast({
+      title: '该功能暂未开发 下学期再做 可以点击首页-榜单查看哦',
+      icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+      duration: 5000     
+    })  
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

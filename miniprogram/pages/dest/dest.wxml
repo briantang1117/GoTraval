@@ -4,36 +4,36 @@
   <view class="continentName">亚洲</view>
   <view class="nation">
     <block wx:for="{{Asia}}" wx:key="index">
-      <view class="nationBox">
+      <view class="nationBox" bindtap='sorry'>
         <image src="{{item.image}}" mode="aspectFill"></image>
         <text>{{item.nation}}</text>
       </view>
     </block>
-    <view class="nationMore">
+    <view class="nationMore"  bindtap='sorry'>
       <text>查看更多</text>
     </view>
   </view>
   <view class="continentName">欧洲</view>
   <view class="nation">
     <block wx:for="{{Eur}}" wx:key="index">
-      <view class="nationBox">
+      <view class="nationBox"  bindtap='sorry'>
         <image src="{{item.image}}" mode="aspectFill"></image>
         <text>{{item.nation}}</text>
       </view>
     </block>
-    <view class="nationMore">
+    <view class="nationMore"  bindtap='sorry'>
       <text>查看更多</text>
     </view>
   </view>
   <view class="continentName">北美洲</view>
   <view class="nation">
     <block wx:for="{{NA}}" wx:key="index">
-      <view class="nationBox">
+      <view class="nationBox"  bindtap='sorry'>
         <image src="{{item.image}}" mode="aspectFill"></image>
         <text>{{item.nation}}</text>
       </view>
     </block>
-    <view class="nationMore">
+    <view class="nationMore"  bindtap='sorry'>
       <text>查看更多</text>
     </view>
   </view>
@@ -81,8 +81,5 @@
         <text>{{item.nation}}</text>
       </view>
     </block>
-    <view class="nationMore">
-      <text>查看更多</text>
-    </view>
   </view>
 </view>
